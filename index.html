@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chiya Mantra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@400;500;600&family=Yatra+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="topbar">
+  <button class="burger" id="burger" aria-label="Language and gifts">☰</button>
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="active"><i>⌂</i><span data-i18n="nav_home">Home</span></a>
+    <a href="#menu"><i>☕</i><span data-i18n="nav_menu">Menu</span></a>
+    <a href="#gallery"><i>▣</i><span data-i18n="nav_gallery">Gallery</span></a>
+    <a href="#about"><i>ⓘ</i><span data-i18n="nav_about">About</span></a>
+  </nav>
+</header>
+
+<div class="overlay" id="overlay"></div>
+<aside class="langpanel" id="langpanel">
+  <h3 data-i18n="lang_title">Choose language</h3>
+  <button data-lang="en"><b>English</b><small>English</small></button>
+  <button data-lang="hi"><b>हिन्दी</b><small>Hindi</small></button>
+  <button data-lang="ne"><b>नेपाली</b><small>Nepali</small></button>
+  <button data-lang="pa"><b>पहाडी</b><small>Pahadi</small></button>
+  <a class="giftlink" href="gifts.html"><span class="gi">🎁</span><span><b data-i18n="gift_link">Birthday & Gifts</b><small data-i18n="gift_sub">Surprises for our guests</small></span></a>
+</aside>
+
+<section id="home" class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-dust" id="dust" aria-hidden="true"></div>
+  <div class="hero-txt" id="heroTxt">
+    <p class="tag" data-i18n="hero_tag">Kalyanpur, Majhoo, Nepal</p>
+    <h1>चिया मन्त्र</h1>
+    <h2>Chiya Mantra</h2>
+    <p class="sub" data-i18n="hero_sub">Tea, momo and quiet corners under the prayer flags.</p>
+    <a href="#menu" class="btn" data-i18n="hero_btn">See the menu</a>
+  </div>
+  <div class="scrollhint" data-i18n="scroll">Scroll down</div>
+</section>
+
+<div class="marq" aria-hidden="true"><div class="in" id="marqIn"><span data-i18n="marq"></span><span data-i18n="marq"></span><span data-i18n="marq"></span><span data-i18n="marq"></span></div></div>
+
+<section id="menu" class="sec">
+  <h2 class="title rv-l"><img class="logo" src="images/logo.png" alt="Chiya Mantra logo" onerror="this.remove()"><span data-i18n="menu_title">Our menu</span></h2>
+  <p class="lead rv-r" data-i18n="menu_sub">Prices are in Nepali rupees (Rs).</p>
+  <div class="tabs rv-l">
+    <button class="tab on" data-tab="food" data-i18n="tab_food">Food</button>
+    <button class="tab" data-tab="drink" data-i18n="tab_drink">Drinks</button>
+  </div>
+  <div class="menu-grid" id="menuGrid"></div>
+</section>
+
+<section id="gallery" class="sec dark">
+  <h2 class="title rv-r" data-i18n="gal_title">Gallery</h2>
+  <p class="lead rv-l" data-i18n="gal_sub">Scroll and watch the photos drift. Tap a photo to enlarge.</p>
+  <div class="masonry" id="masonry"></div>
+</section>
+
+<section id="food" class="sec food">
+  <h2 class="title rv-u" data-i18n="food_title">A taste of Nepal</h2>
+  <p class="lead rv-u" data-i18n="food_sub">The flavours of Nepal that fill our tables.</p>
+  <div class="fgrid">
+    <article class="fcard rv-u"><span>01</span><h3 data-i18n="ft_momo">Momo</h3><p data-i18n="f_momo"></p></article>
+    <article class="fcard rv-u"><span>02</span><h3 data-i18n="ft_sek">Sekuwa</h3><p data-i18n="f_sek"></p></article>
+    <article class="fcard rv-u"><span>03</span><h3 data-i18n="ft_sad">Sadeko</h3><p data-i18n="f_sad"></p></article>
+    <article class="fcard rv-u"><span>04</span><h3 data-i18n="ft_chiya">Chiya</h3><p data-i18n="f_chiya"></p></article>
+  </div>
+</section>
+
+<section id="evening" class="sec evening">
+  <div class="flags" aria-hidden="true"></div>
+  <div class="lanterns" aria-hidden="true"><i>🏮</i><i>🏮</i><i>🏮</i><i>🏮</i><i>🏮</i><i>🏮</i></div>
+  <h2 class="title rv-u" data-i18n="eve_title">An evening of peace</h2>
+  <p class="lead rv-u" data-i18n="eve_sub">Slow down, you are among friends.</p>
+  <figure class="eve-photo rv-u"><img src="images/evening.jpg" alt="Evening at Chiya Mantra" onerror="this.parentElement.remove()"></figure>
+  <div class="chips">
+    <span class="rv-u" data-i18n="ch1"></span>
+    <span class="rv-u" data-i18n="ch2"></span>
+    <span class="rv-u" data-i18n="ch3"></span>
+    <span class="rv-u" data-i18n="ch4"></span>
+  </div>
+  <div class="eve-lines">
+    <p class="rv-u" data-i18n="e1"></p>
+    <p class="rv-u" data-i18n="e2"></p>
+    <p class="rv-u" data-i18n="e3"></p>
+    <p class="rv-u" data-i18n="e4"></p>
+    <p class="rv-u" data-i18n="e5"></p>
+    <p class="rv-u" data-i18n="e6"></p>
+  </div>
+</section>
+
+<section id="about" class="sec about">
+  <div class="about-img rv-l">
+    <img data-par="0.04" src="images/gate.jpg" alt="Chiya Mantra gate">
+    <div class="owner"><img src="images/owner.jpg" alt="Owner"><span data-i18n="owner_cap">Your host at Chiya Mantra</span></div>
+  </div>
+  <div class="about-txt rv-r">
+    <h2 class="title" data-i18n="about_title">About Chiya Mantra</h2>
+    <p data-i18n="about_p1"></p>
+    <p data-i18n="about_p2"></p>
+    <p class="addr"><b data-i18n="addr_label">Address</b><br><span data-i18n="addr">Kalyanpur, Majhoo, Nepal</span></p>
+    <p class="addr"><b data-i18n="hrs_lbl">Opening hours</b><br><span data-i18n="hrs">Every day, 10:00 AM – 10:00 PM</span><br><span class="badge" id="openBadge"></span></p>
+    <div class="cta"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Chiya+Mantra+Kalyanpur+Majhoo+Nepal" data-i18n="map_btn">Open in Google Maps</a><div class="socs" data-soc></div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="fcont">
+ <div><b>Developed by</b><span class="credit">🥷🏼ᴋxʀᴀɴ</span></div>   
+    <div><b data-i18n="call_lbl">Call us</b><a href="tel:+9779862881205">9862881205</a></div>
+    <div><b data-i18n="mail_lbl">Email us</b><a href="mailto:chamlingarun64@gmail.com">chamlingarun64@gmail.com</a></div>
+    <div><b data-i18n="hrs_lbl">Opening hours</b><span data-i18n="hrs">Every day, 10:00 AM – 10:00 PM</span></div>
+    <div><b data-i18n="follow_lbl">Follow us</b><div class="socs" data-soc></div></div>
+  </div>
+  <p>© <span id="yr"></span> Chiya Mantra · <span data-i18n="addr">Kalyanpur, Majhoo, Nepal</span></p>
+</footer>
+
+<div class="lightbox" id="lightbox"><button id="lbClose" aria-label="Close">✕</button><img alt=""></div>
+<script src="script.js"></script>
+</body>
+</html>
